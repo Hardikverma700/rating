@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	int x, y, s;
+	while(t--)
+	{
+	    cin>>s;
+	    if(s == 0)
+	    {
+	        x = -1;
+	        y = 1;
+	    }
+	    else if(s > 0)
+	    {
+	        x = s + 1;
+	        y = -(x - s);
+	    }
+	    else{
+	         x = -(s + 1);
+	        y = (x - s);
+	    }
+	    cout<<x * y<<endl;
+	}
+	return 0;
+}
